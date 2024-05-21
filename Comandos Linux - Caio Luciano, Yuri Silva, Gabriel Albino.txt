@@ -1,0 +1,61 @@
+mostrar server
+for ((;;))
+do
+echo "----------------------------------------------------------------------------------"
+echo "Utilize o comando ctrl + C para dar stop na execução"
+echo "Data"
+date
+echo "-------------------------"
+echo "Tempo de Atividade"
+uptime
+echo "-------------------------"
+echo "Uso de memória"
+free -m
+echo "-------------------------"
+echo
+echo "----------------------------------------------------------------------------------"
+sleep 5
+done
+
+calculadora
+echo "Digite um numero"
+  read num1
+echo "Digite outro numero"
+read num2
+ 
+echo "Escolha uma opção:"
+echo "1 - Somar "
+echo "2 - Subtrair "
+echo "3 - Multiplicar "
+echo "4 - Dividir "
+  read equacao
+ 
+if [ $equacao -eq 1 ]; then
+  resultado=$[num1+num2]
+elif [ $equacao -eq 2 ]; then
+  resultado=$[num1-num2]
+elif [ $equacao -eq 3 ]; then
+  resultado=$[num1*num2]
+elif [ $equacao -eq 4 ]; then
+  resultado=$[num1/num2]
+else
+  echo "Opção inválida."
+fi
+ 
+echo "O resultado é: $resultado"
+
+atualizar pacotes
+sudo apt- get update
+sudo apt update
+sudo apt- get upgrade
+sudo apt upgrade
+Fatorial
+  GNU nano 6.2                                        fatorial_teste.sh                                                 echo Qual numero gostaria de saber o fatorial?
+read mynumber
+factorial=1
+for ((i=1;i<mynumber;i++))
+do
+factorial=$(($factorial*$i))
+done
+echo o resultado fatorial sera: $factorial
+tem menu de contexto
